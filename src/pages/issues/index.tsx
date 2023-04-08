@@ -1,4 +1,9 @@
+import { useState } from "react";
+import EditModal from "./components/edit-modal";
+
 export default function Issues() {
+
+	const [editModalVisible, setEditModalVisible] = useState(false);
 
 	const issues = [
     {
@@ -15,11 +20,25 @@ export default function Issues() {
     },
   ];
 
+	const handleIssueAddBtnClick = () => {
+		setEditModalVisible(true)
+	}
+
+	const handleEditConfirm = (formValues: any) => {
+		console.log("handleEditConfirm", formValues);
+    setEditModalVisible(false);
+  };
+
 	return (
     <div className="w-full">
       <div className="flex items-center">
         <div className="text-xl font-bold">事项清单</div>
-        <div className="border w-7 h-7 rounded text-center ml-2">+</div>
+        <div
+          className="border w-7 h-7 rounded text-center ml-2 cursor-pointer"
+          onClick={handleIssueAddBtnClick}
+        >
+          +
+        </div>
       </div>
       <div className="mt-4 flex flex-wrap">
         {issues.map((issue) => {
@@ -40,6 +59,14 @@ export default function Issues() {
           );
         })}
       </div>
+
+      <EditModal
+        visible={editModalVisible}
+        onClose={() => {
+          setEditModalVisible(false);
+        }}
+        onConfirm={handleEditConfirm}
+      />
     </div>
   );
 }
