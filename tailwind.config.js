@@ -11,7 +11,8 @@ export default {
 				'14': '3.5rem',
 			},
 			colors: {
-				theme: '#2a6bfe'
+				theme: '#2a6bfe',
+				desc: '#f8f8f8'
 			}
 		}
 	},
