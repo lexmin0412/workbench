@@ -2,7 +2,6 @@ import Layout from './components/layout'
 import Header from './components/layout/header';
 import Footer from './components/layout/footer';
 import Issues from './pages/issues';
-import './App.css'
 
 function App() {
 
