@@ -36,7 +36,7 @@ export default function Header() {
 	return (
     <div className="flex items-center w-full">
 			{/* logo */}
-			<div className="px-4 font-bold text-lg mr-4">
+			<div className="px-4 font-bold text-lg mr-4 cursor-pointer">
 				Lexmin0412
 			</div>
 
