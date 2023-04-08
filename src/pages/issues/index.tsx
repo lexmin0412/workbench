@@ -1,5 +1,5 @@
 export default function Issues() {
 	return (
-		<div>事项清单</div>
+		<div className="text-lg font-bold">事项清单</div>
 	)
 }

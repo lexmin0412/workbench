@@ -7,7 +7,11 @@ export default {
 	theme: {
 		extend: {
 			lineHeight: {
+				'12': '3rem',
 				'14': '3.5rem',
+			},
+			colors: {
+				theme: '#2a6bfe'
 			}
 		}
 	},
