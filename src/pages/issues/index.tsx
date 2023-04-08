@@ -10,13 +10,19 @@ export default function Issues() {
       id: Math.random(),
       title: "自定义请求库",
       desc: "封装各平台如 Github Rest API 的请求，统一请求及响应格式，降低心智负担",
-			tags: ['重要', '紧急']
+      tags: ["重要", "紧急"],
     },
     {
       id: Math.random(),
       title: "tpc 功能增强",
       desc: "加强 TPC 的自定义功能，支持自定义打包格式、运行平台、构建工具、TS 版本等",
-			tags: ['重要']
+      tags: ["重要"],
+    },
+    {
+      id: Math.random(),
+      title: "可拖拽排序表单",
+      desc: "支持拖拽排序，支持自定义表单组件尺寸，支持动态添加表单，支持数据驱动",
+      tags: ["重要"],
     },
   ];
 
