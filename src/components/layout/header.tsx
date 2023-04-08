@@ -17,19 +17,31 @@ const headerTabs: HeaderTab[] = [
 	}
 ]
 
+const links = [
+	{
+		type: 'outside',
+		text: 'Github',
+		url: 'https://github.com/lexmin0412/workbench'
+	}
+]
+
+const openNewPage = (url: string) => {
+	window.open(url)
+}
+
 export default function Header() {
 
 	const [selected, setSelected] = useState(headerTabs[0].id);
 
 	return (
-    <div className="flex items-center">
+    <div className="flex items-center w-full">
 			{/* logo */}
 			<div className="px-4 font-bold text-lg mr-4">
 				Lexmin0412
 			</div>
 
 			{/* tabs */}
-      <div className="flex justify-center w-full">
+      <div className="flex justify-start w-full flex-1">
         {headerTabs.map((tab) => {
           return (
             <div
@@ -45,6 +57,21 @@ export default function Header() {
           );
         })}
       </div>
+
+			<div className="pr-4">
+				{
+					links.map((link)=>{
+						return (
+              <div
+                className="cursor-pointer"
+                onClick={() => openNewPage(link.url)}
+              >
+                {link.text}
+              </div>
+            );
+					})
+				}
+			</div>
     </div>
   );
 }
