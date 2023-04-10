@@ -24,6 +24,12 @@ export default function Issues() {
       desc: "支持拖拽排序，支持自定义表单组件尺寸，支持动态添加表单，支持数据驱动",
       tags: ["重要"],
     },
+    {
+      id: Math.random(),
+      title: "日程管理",
+      desc: "支持通过日历形式展示，支持通过 webhook 发送提醒，支持与 todo 项目同步数据",
+      tags: ["重要"],
+    },
   ];
 
 	const handleIssueAddBtnClick = () => {
