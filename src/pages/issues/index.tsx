@@ -30,6 +30,18 @@ export default function Issues() {
       desc: "支持通过日历形式展示，支持通过 webhook 发送提醒，支持与 todo 项目同步数据",
       tags: ["重要"],
     },
+    {
+      id: Math.random(),
+      title: "规则选择器",
+      desc: "支持通过 AND、OR、IN 等组合关系输出一个标准化的规则集，支持数据驱动，异步规则",
+      tags: ["重要"],
+    },
+    {
+      id: Math.random(),
+      title: "支持数据驱动和异步的 Select",
+      desc: "支持数据驱动、异步请求的 Select 选择器",
+      tags: ["重要"],
+    },
   ];
 
 	const handleIssueAddBtnClick = () => {
