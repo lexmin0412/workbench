@@ -55,6 +55,27 @@ export default function Issues() {
       createdAt: "2023.04.11",
       tags: ["重要"],
     },
+    {
+      "id": 0.25370447503021452,
+      "title": "useDeleteModal",
+      "desc": "通过传入要删除的 item 和自定义 content 渲染来快速调用删除确认 Modal，减少重复的模版代码",
+      "createdAt": "2023.04.12",
+      "tags": ["重要", "紧急"]
+    },
+    {
+      "id": 0.25370447503021452,
+      "title": "swagger2typescript",
+      "desc": "将 swagger jsonschema 转换为 typescript 类型定义",
+      "createdAt": "2023.04.12",
+      "tags": ["重要", "紧急"]
+    },
+    {
+      "id": 0.25370447503021410,
+      "title": "Git 仓库批量下载",
+      "desc": "批量 clone gitlab/github 某个组织下的仓库",
+      "createdAt": "2023.04.13",
+      "tags": ["重要", "紧急"]
+    }
   ];
 
 	const handleIssueAddBtnClick = () => {
