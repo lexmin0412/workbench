@@ -82,6 +82,13 @@ export default function Issues() {
       "desc": "使用 H5 打开常用 APP",
       "createdAt": "2023.04.15",
       "tags": []
+    },
+    {
+      "id": 0.25370447508101410,
+      "title": "一键收藏工具",
+      "desc": "通过解析链接或二维码信息来收藏信息，提取统一格式",
+      "createdAt": "2023.04.16",
+      "tags": []
     }
   ];
 
