@@ -1,5 +1,5 @@
 import { useState } from "react";
-import EditModal from "./components/edit-modal";
+import EditModal from "./../../components/edit-modal"
 
 export default function Issues() {
 
@@ -56,40 +56,47 @@ export default function Issues() {
       tags: ["重要"],
     },
     {
-      "id": 0.25370447503021452,
-      "title": "useDeleteModal",
-      "desc": "通过传入要删除的 item 和自定义 content 渲染来快速调用删除确认 Modal，减少重复的模版代码",
-      "createdAt": "2023.04.12",
-      "tags": ["重要", "紧急"]
+      id: 0.25370447503021452,
+      title: "useDeleteModal",
+      desc: "通过传入要删除的 item 和自定义 content 渲染来快速调用删除确认 Modal，减少重复的模版代码",
+      createdAt: "2023.04.12",
+      tags: ["重要", "紧急"],
     },
     {
-      "id": 0.25370447503021452,
-      "title": "swagger2typescript",
-      "desc": "将 swagger jsonschema 转换为 typescript 类型定义",
-      "createdAt": "2023.04.12",
-      "tags": ["重要", "紧急"]
+      id: 0.25370447503021452,
+      title: "swagger2typescript",
+      desc: "将 swagger jsonschema 转换为 typescript 类型定义",
+      createdAt: "2023.04.12",
+      tags: ["重要", "紧急"],
     },
     {
-      "id": 0.25370447503021410,
-      "title": "Git 仓库批量下载",
-      "desc": "批量 clone gitlab/github 某个组织下的仓库",
-      "createdAt": "2023.04.13",
-      "tags": ["重要", "紧急"]
+      id: 0.2537044750302141,
+      title: "Git 仓库批量下载",
+      desc: "批量 clone gitlab/github 某个组织下的仓库",
+      createdAt: "2023.04.13",
+      tags: ["重要", "紧急"],
     },
     {
-      "id": 0.25370447503001410,
-      "title": "常用 APP 启动器",
-      "desc": "使用 H5 打开常用 APP",
-      "createdAt": "2023.04.15",
-      "tags": []
+      id: 0.2537044750300141,
+      title: "常用 APP 启动器",
+      desc: "使用 H5 打开常用 APP",
+      createdAt: "2023.04.15",
+      tags: [],
     },
     {
-      "id": 0.25370447508101410,
-      "title": "一键收藏工具",
-      "desc": "通过解析链接或二维码信息来收藏信息，提取统一格式",
-      "createdAt": "2023.04.16",
-      "tags": []
-    }
+      id: 0.2537044750810141,
+      title: "一键收藏工具",
+      desc: "通过解析链接或二维码信息来收藏信息，提取统一格式",
+      createdAt: "2023.04.16",
+      tags: [],
+    },
+    {
+      id: 0.2537044750818011,
+      title: "destroyOnClose",
+      desc: "一个支持 destroyOnClose 的弹窗组件",
+      createdAt: "2023.04.16",
+      tags: [],
+    },
   ];
 
 	const handleIssueAddBtnClick = () => {
@@ -113,7 +120,7 @@ export default function Issues() {
         </div>
       </div>
       <div className="mt-4 flex flex-wrap">
-        {issues.map((issue) => {
+        {issues?.map((issue) => {
           return (
             <div className="rounded-md shadow-xl p-4 mb-4 bg-desc cursor-pointer w-96 h-40 mr-4 flex flex-col">
               <div className="font-semibold">{issue.title}</div>

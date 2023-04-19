@@ -18,7 +18,7 @@ export default function Layout(props: LayoutProps) {
         {header}
       </div>
       {/* 内容区 */}
-      <div className="flex flex-1 px-4 py-4">{children}</div>
+      <div className="flex flex-1 px-4 py-4 overflow-auto">{children}</div>
       {/* 底部 */}
       <div className="flex h-14 leading-14">{footer}</div>
     </div>

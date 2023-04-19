@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 interface HeaderTab {
 	id: string
@@ -33,6 +33,16 @@ export default function Header() {
 
 	const [selected, setSelected] = useState(headerTabs[0].id);
 
+	useEffect(()=>{
+		setSelected(window.location.pathname.slice(1));
+	}, [])
+
+
+	const handleTabChange = (tab) => {
+		console.log("handleTabChange", tab);
+		window.location.href = `${window.location.origin}/${tab.id}`;
+	}
+
 	return (
     <div className="flex items-center w-full">
 			{/* logo */}
@@ -51,6 +61,7 @@ export default function Header() {
                   true,
                 "bg-theme text-white": selected === tab.id,
               })}
+							onClick={()=>handleTabChange(tab)}
             >
               {tab.title}
             </div>
