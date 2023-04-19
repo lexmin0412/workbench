@@ -44,7 +44,7 @@ export default function Repos() {
               return (
                 <div className="rounded-md shadow-xl p-4 mb-4 bg-desc cursor-pointer w-96 h-40 mr-4 flex flex-col">
                   <div className="font-semibold">{repo.name}</div>
-                  <div className="mt-2 text-sm flex-1">{repo.description}</div>
+                  <div className="mt-2 text-sm flex-1 overflow-hidden mb-4">{repo.description}</div>
                   <div className="flex justify-between">
                     <div className="flex text-sm mr-2">
                       创建于 {dayjs(repo.created_at).format("YYYY-MM-DD")}
