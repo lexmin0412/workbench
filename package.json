@@ -3,6 +3,21 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+	"description": "my workbench",
+  "author": {
+    "name": "lexmin0412",
+    "email": "zhangle_dev@outlook.com",
+    "url": "https://github.com/lexmin0412"
+  },
+  "keywords": [
+    "workbench",
+    "github-manage",
+    "todo"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lexmin0412/workbench"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
