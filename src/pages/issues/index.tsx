@@ -97,6 +97,20 @@ export default function Issues() {
       createdAt: "2023.04.16",
       tags: [],
     },
+		{
+      id: 0.2537044750718011,
+      title: "auto-install-types",
+      desc: "在依赖安装完成后自动扫描 package.json 中的依赖，判断是否有缺失 types 的，是的话自动安装 @types/* 依赖",
+      createdAt: "2023.04.21",
+      tags: ["重要", "紧急"],
+    },
+		{
+      id: 0.2537107750818011,
+      title: "图片颜色提取器",
+      desc: "自动提取图片中的所有色值，最好能够按照出现的顺序排序，构建浏览器插件或 npm 形式",
+      createdAt: "2023.04.21",
+      tags: ["重要", "紧急"],
+    },
   ];
 
 	const handleIssueAddBtnClick = () => {
