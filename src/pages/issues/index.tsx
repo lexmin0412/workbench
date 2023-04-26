@@ -118,6 +118,13 @@ export default function Issues() {
       createdAt: "2023.04.24",
       tags: ["重要"],
     },
+    {
+      id: 0.25371001850818011,
+      title: "GCM 支持管理不同平台的 SSH key",
+      desc: "GCM 支持管理不同平台的 SSH key",
+      createdAt: "2023.04.26",
+      tags: ["重要"],
+    },
   ];
 
 	const handleIssueAddBtnClick = () => {
