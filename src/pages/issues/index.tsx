@@ -125,6 +125,13 @@ export default function Issues() {
       createdAt: "2023.04.26",
       tags: ["重要"],
     },
+    {
+      id: 0.25379181850818011,
+      title: "Taro3 Next.js 模板",
+      desc: "一个能够启动的 Taro3 Next.js 模板",
+      createdAt: "2023.04.27",
+      tags: [],
+    },
   ];
 
 	const handleIssueAddBtnClick = () => {
